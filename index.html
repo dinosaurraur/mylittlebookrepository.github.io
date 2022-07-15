@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thou Shall Not Pass</title>
+	<script type="text/javascript">
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if(passwordText== "ILoveBooks") {
+				return true;
+			}
+			else{
+
+				alert("ThouShallNotPass");
+				return false;
+			}
+			
+		}
+
+	</script>
+</head>
+<body>
+	<p> <img src="images\background7.gif"></p>
+	<p style="font-size: 60px"> Please Enter the Appropriate Code:</p>
+	<p>Code: <input id="passwordbox" name="password"></p>
+	<a href="book-repository-page1.html" onclick="return checkpassword() ;"><button>Click Here</button></a>
+</body>
+</html>
